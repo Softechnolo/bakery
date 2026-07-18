@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order | Dadin Kowa Bakery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Dadin Kowa</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="order.html" class="nav-link active">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container order-page">
+    <section class="contact-intro">
+      <p class="eyebrow">Reach out</p>
+      <h1>Order or talk to us</h1>
+      <p>Send us a message to place a special order, request a cake, or ask about daily fresh-baked items.</p>
+    </section>
+
+    <div class="order-grid">
+      <form class="contact-form" id="orderForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what you'd love to order" required></textarea>
+
+        <button type="submit" class="button">Send Request</button>
+        <p class="form-success" id="formSuccess" hidden>Your message has been sent. We'll get back to you soon!</p>
+      </form>
+
+      <aside class="contact-info">
+        <div class="info-card">
+          <h2>Contact</h2>
+          <p>Phone: <a href="tel:+2348012345678">+234 801 234 5678</a></p>
+          <p>Email: <a href="mailto:hello@dadinkowa.com">hello@dadinkowa.com</a></p>
+        </div>
+
+        <div class="info-card">
+          <h2>Location</h2>
+          <p>48 Elm Street, City Centre, Kaduna</p>
+        </div>
+
+        <div class="map-placeholder">
+          <p>Map placeholder</p>
+          <img src="https://via.placeholder.com/600x350?text=Map+Location" alt="Map placeholder" />
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Dadin Kowa Bakery</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
